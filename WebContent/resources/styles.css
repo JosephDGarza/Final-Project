@@ -1,0 +1,273 @@
+/* Global style */
+* {
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Kanit', sans-serif;
+	color: white;
+	text-decoration: none;
+}
+
+.fadeIn {
+	opacity: 0;
+}
+
+html {
+	background-image: url("./images/playrtdbg.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+a:hover {
+	opacity: .5;
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgba(64, 73, 91, 1);
+	height: 80px;
+	width: 100%;
+	position: fixed;
+	-webkit-box-shadow: 0px 7px 68px -2px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px 7px 68px -2px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 7px 68px -2px rgba(0, 0, 0, 0.75);
+	border-radius: 0px 0px 5px 5px;
+	position: fixed;
+	display: flex;
+}
+
+header img {
+	margin: 0px 40px;
+	height: 68px;
+	width: auto;
+}
+
+header p {
+	margin: 30px 0px 0px 0px;
+	font-size: .75rem;
+}
+
+#logged_head {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	display: flex;
+	min-height: 100vh;
+	height: 100%;
+}
+
+#sadface {
+	font-size: 10rem;
+}
+
+.info_column {
+	margin: 0px 0px 0px 0px;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 120px;
+	height: 100%;
+	width: 1000px;
+	background-color: rgba(64, 73, 91, 0.7);
+	display: flex;
+}
+
+#home_info {
+	border-radius: 0px 0px 20px 20px;
+}
+
+#home_info p {
+	font-size: 1rem;
+}
+
+.info_header {
+	display: flex;
+	flex-direction: row;
+}
+
+.info_column h1 {
+	font-size: 3rem;
+	margin: 30px 0px 0px 0px;
+	text-align: center;
+}
+
+#logoptions {
+	display: flex;
+	height: 0px;
+	width: 100%;
+	margin: 80px 10px 0px 0px;
+	position: fixed;
+	justify-content: flex-end;
+}
+
+#logoptions nav {
+	display: block;
+	background-color: rgba(64, 73, 91, 0.7);
+}
+
+#optionbar {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+}
+
+#reroll {
+	height: 40px;
+	width: auto;
+	margin: 20px 0px 20px 0px;
+	border: 1px solid white;
+}
+
+#recent_container {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	overflow-x: scroll;
+	margin: 100px 0px 0px 0px;
+	background-color: rgba(64, 73, 91, 0.7);
+	-webkit-box-shadow: 0px 7px 68px -2px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px 7px 68px -2px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 7px 68px -2px rgba(0, 0, 0, 0.75);
+	background-color: rgba(64, 73, 91, 0.7);
+}
+
+.recent_like {
+	display: flex;
+	flex-direction: column;
+	font-size: 1.2rem;
+	margin: 10px 30px 20px 30px;
+}
+
+#like {
+	height: 40px;
+	width: auto;
+	margin: 20px 0px 20px 0px;
+	border: 1px solid white;
+}
+
+#like:hover {
+	opacity: 0.5;
+}
+
+.info_header p {
+	margin: 0px 20px 0px 20px;
+	padding: 5px;
+	height: 220px;
+	overflow: scroll;
+}
+
+input {
+	margin: 20px;
+}
+
+#dice {
+	background-image: url("resources/images/dieroll.png");
+	backgroun-size: contain;
+	height: 100px;
+	width: 100px;
+	height: 100px;
+	transition: transform .8s ease-in-out;
+}
+
+#dice:hover {
+	transform: rotate(720deg);
+}
+
+.discord_strip {
+	height: 128px;
+	width: 600px;
+}
+
+#discordlink {
+	margin: 40px 0px;
+}
+
+label {
+	display: block;
+	padding: 30px;
+	margin: 30px;
+}
+
+.check {
+	display: none;
+}
+
+#check1:checked ~ #label1 {
+	border: 1px solid white;
+}
+
+#check2:checked ~ #label2 {
+	border: 1px solid white;
+}
+
+#check3:checked ~ #label3 {
+	border: 1px solid white;
+}
+
+#default_option {
+	display: none;
+}
+
+#getrolling_form {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+label:hover {
+	opacity: .5;
+	cursor: pointer;
+}
+
+#missingtwitch {
+	width: 750px;
+	height: 440px;
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(64, 73, 91, 1);
+	height: 100px;
+	width: 100%;
+	background-color: rgba(64, 73, 91, 1);
+	bottom: 0;
+}
+
+.bio {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin: 30px;
+}
+
+.bio img {
+	height: 250px;
+	border-radius: 20px 60px 20px 60px;
+	margin: 20px;
+}
+
+footer a {
+	display: inline-block;
+	margin: 10px 20px 10px 20px;
+}
+/* Return page style */
+.avatar {
+	margin: 10px;
+	border-radius: 50%;
+	border: 1px solid white;
+}
